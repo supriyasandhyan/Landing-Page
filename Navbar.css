@@ -1,0 +1,117 @@
+.navbarr {
+  display: flex;
+  width: 100vw;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 48px;
+}
+
+.nav-img{
+  height: 60px;
+}
+
+.hamburger{
+  display: none;
+}
+.navbar-ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0px 48px 0 10px;
+  gap: 32px;
+  margin-bottom: 0 !important;
+}
+.navbar-ul-li a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navbar-ul-li a:hover{
+  color: #4DB8EF;
+}
+.nav-bttn strong{
+  font-size: 14px;
+}
+.nav-bttn{
+  background-color: #4DB8EF;
+  border: none;
+  text-align: center;
+  padding: 8px 16px;
+  /* margin-left: 150px; */
+  border-radius: 35px;
+  font-size: 15px;
+  /* width: 155px; */
+  color: white;
+  box-shadow: 1px 1px 5px 1px #8080808f;
+  animation: bounce .5s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.1); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.1); }
+}
+@keyframes bounce {
+  to { transform: scale(1.1); }
+}
+
+#getInTouchMobile{
+  display: none;
+}
+
+
+/* Mobile screen */
+@media screen and (max-width:480px) {
+ .navbarr{
+    justify-content: space-between;
+    flex-wrap:wrap; 
+    padding: 8px 16px;
+  }
+
+  
+  #getInTouchMobile{
+    display: block;
+  }
+
+  .navbar-ul{
+    width: 100%;
+    display: block;
+    padding-left:0 ;
+    margin-top: 12px;
+  }
+  
+  .nav-img{
+    height: 40px ;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .navbar-ul-li{
+    padding: 8px 0;
+  }
+
+  .navbar-ul-li a{
+    padding: 0px;
+  }
+
+  .nav-bttn{
+    width: fit-content;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-img{
+    height: 72px;
+  }
+
+  .navbarr{
+    padding: 8px 54px;
+  }
+  
+  .navbar-ul-li a{
+    font-size: 20px;
+  }
+}

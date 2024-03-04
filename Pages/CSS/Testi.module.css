@@ -1,0 +1,172 @@
+.testi{
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 10px 100px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.testisub1 p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.testisub2{
+    display: flex;
+    gap: 15px;
+    padding: 0px 0px;
+}
+.iframe-container{
+height: 278px;
+}
+
+.blankb{
+    color: #4DB8EF;
+}
+
+.maintest{
+    padding: 12px;
+}
+
+
+.youtext{
+    background-color:#4DB8EF ;
+    line-height: 15px;
+    padding: 5px;
+}
+.cont-p1{
+    font-size: 25px;
+}
+.cont-p2{
+    font-size: 15px;
+}
+.testisub3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.child{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(196, 226, 231);
+    margin-left:10px ;
+    padding: 5px;
+}
+.activechild{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4DB8EF;
+    margin-left:10px ;
+    padding: 5px;
+}
+
+.testisub4{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #e1e1e14f;
+}
+
+.testisub4-card1{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 237px;
+    margin: 8px;
+}
+.testisub4-card2{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    margin: 8px;
+}
+.testisub4-card3{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 235px;
+    margin: 8px;
+}
+.testisub4-card4{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 235px;
+    margin: 8px;
+}
+
+.cardimage{
+    height: 60px;
+    width: 60px;
+}
+.img-icon{
+    height: 60px;
+    width: 60px; 
+}
+.blank-text p{
+    font-weight: 600;
+    font-size: 9px;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+.cardintro p{
+    font-size: 8px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+.cardintro2 p{
+    font-size: 9px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+@media screen and (max-width:480px) {
+    .testisub2{
+        display: block;
+    }
+
+    .testi {
+        padding: 0px;
+    }
+
+    .testi iframe{
+        width: 90vw;
+    }
+
+    .testisub4{
+        display: grid;
+    }
+
+    .testisub4-card{
+        width: 90vw;
+    }
+
+    .testisub1 p {
+        font-size: 26px;
+    }
+}

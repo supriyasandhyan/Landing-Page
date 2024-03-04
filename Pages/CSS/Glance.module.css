@@ -1,0 +1,43 @@
+.glance{
+    background-color: rgb(255, 255, 255);
+    padding: 25px 48px;
+    margin-bottom: 24px;
+}
+
+.glancetext{
+    font-size:30px;
+    font-weight: 500;
+}
+.glancetext b{
+    font-size: 30px;
+    color: #4DB8EF;
+    font-weight: 500;
+}
+.carousel{
+    height: 100vh;
+    width: 100vw;
+}
+.glanceimg{
+    height: 100vh;
+    width: 100vw;
+}
+.glanceimg img{
+    height: 470px;
+    width: 790px;
+    /* margin-top: 20px; */
+}
+
+@media screen and (max-width:480px) {
+
+    .glance{
+        padding: 12px 24px;
+    }
+
+    .glancetext{
+        font-size: 18px;
+    }
+
+    .glancetext > b{
+        font-size: 18px;
+    }
+}

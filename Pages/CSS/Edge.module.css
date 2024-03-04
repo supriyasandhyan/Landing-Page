@@ -1,0 +1,104 @@
+.edge{
+    width: 100vw;
+    padding: 20px 48px;
+    background-color:white;
+}
+.edge-intro{
+    line-height: 25px;
+}
+.edge-intro b{
+    font-size: 30px;
+    color: #4DB8EF;
+    font-weight: 500;
+
+}
+.edge-intro p{  
+    font-size: 30px;
+}
+.edge-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.edge-card{
+    /* width: 420px; */
+    width: 35%;
+    padding: 28px 0;
+}
+.edge-card hr{
+    height: 2px;
+    margin: 0px;
+}
+.section1{
+    display:flex;
+}
+.section-head{
+    margin-left: 20px;
+}
+.section-head-p{
+    padding-top: 12px;
+}
+.section2 .section2-p{
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.edge-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px; */
+}
+.edgebutton{
+    padding: 12px;
+    width: 175px;
+    color: white;
+    background-color:#4DB8EF ;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+}
+.edgebutton:hover{
+    box-shadow: 2px 2px 7px 2px #8080808f;
+}
+.edge-icons{
+    width: 50px;
+    padding: 0px 0px 4px 0px;
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width:480px) {
+    .edge{
+        padding: 20px;
+    }
+
+    .edge-cards{
+        display: block;
+    }
+
+    .edge-card{
+        /* width: 420px; */
+        width: 100% !important;
+        padding: 28px 0;
+        margin-bottom: 24px;
+    }
+
+    .edge-intro{
+        line-height: 30px;
+    }
+    
+    .edge-intro b{
+        font-size: 26px;
+    }
+
+    .edge-intro p{  
+        font-size: 26px;
+    }
+
+    .edgebutton {
+        width: 355px;
+    }
+}

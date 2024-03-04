@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+.Faq{
+  background-color: white;
+  overflow-y: scroll;
+  padding: 10px 48px;
+  }
+  
+  .faqh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+  }
+  
+  .faqp{
+    margin-left: 41%;
+    font-size:larger;
+    margin-top: 15px;
+    font-weight: lighter;
+    font-family: unset;
+  }
+  
+.accordion{
+  padding:10px;
+}
+
+.accordion .accordion-item {
+  background-color: white;
+}
+
+.accordion h2 {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  color: #333333;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  padding:0px;
+  line-height:25px;
+  margin:0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.accordion h2:hover, .accordion h2:focus {
+  cursor: pointer;
+  color: #141414;
+}
+.accordion h2:hover::after, .accordion h2:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion h2 .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion-title{
+  overflow-wrap: normal;
+}
+
+.accordion h2 .icon {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  background-color: #4DB8EF;
+}
+.faq-content {
+    padding: 80px 0px;
+}
+
+/* //horizontal line */
+.accordion h2 .icon::before {         
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  color: rgb(255, 255, 255);
+}
+/* vertical line */
+.accordion h2 .icon2::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+  color:rgb(241, 238, 238);
+}
+
+
+.accordion h2[aria-expanded=true] {
+  color: #0c0c0c;
+}
+.accordion h2[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion h2[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 5000px;
+  transition: all 200ms linear;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accordion-content1 {
+    display: none;
+}
+.symbol{
+  display: flex;
+  justify-content: space-between;
+}
+.icn{
+  color: #4DB8EF;
+  height: 10px;
+}
+
+@media screen and (max-width:480px) {
+  .Faq{
+    padding: 24px 8px;
+    width: 100vw;
+
+  }
+  .faqh1 {
+    font-size: 26px;
+  }
+}

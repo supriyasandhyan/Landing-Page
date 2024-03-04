@@ -1,0 +1,92 @@
+.services{
+  background-color: white;
+    padding: 20px 48px;
+    justify-content: center;
+}
+.services-heading{
+  display: flex;
+  justify-content: center;
+}
+.service-p{
+  font-size: 30px;
+  font-weight: 500;
+}
+.service-p b{
+  color: #4DB8EF;
+  font-weight: 500;
+}
+
+.service-row{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.row-items{
+  justify-content:space-between;
+  margin: 20px 60px;
+}
+
+.service-img-icon{
+  background-color: #CAF0F8;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.contntp{
+  margin-left: 5px;
+  font-size: large;
+  text-align: center;
+}
+
+.contnt{
+  align-items: center;
+}
+
+.mob-img{
+  margin-top: 20px;
+  margin-left: -50px;
+}
+
+.web-img{
+  margin-top: 22px;
+  margin-left: -10px;
+}
+
+.uiux-img{
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.itstaff-img{
+  margin-left: -50px;
+}
+
+
+@media screen and (max-width:480px) {
+  .service-row{
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-img-icon{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mob-img, .itstaff-img, .uiux-img, .web-img{
+    width: 100%;
+    display: flex;
+    margin: 0 30px;
+    justify-content: center;
+  }
+
+  .row-items{
+    margin-bottom: 40px;
+  }
+}

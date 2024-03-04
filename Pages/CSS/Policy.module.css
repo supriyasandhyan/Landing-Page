@@ -1,0 +1,159 @@
+.policy-main{
+    background-color: white;
+    padding: 20px 48px;
+}
+
+.policy-sub1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.policy-imagediv{
+    width: 50%;
+}
+
+.policy-content{
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.policy-img{
+    width: 500px;
+}
+.policy-intro{
+    line-height: 20px;
+}
+.intro-p1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.intro-p2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #4DB8EF;
+}
+.poliypara{
+    font-size: 18px;
+    padding-right: 130px;
+    line-height: 30px;
+}
+.claritypara{
+    font-size: 18px;
+    padding-right: 10px;
+    line-height: 30px;
+}
+
+.Initialbtn1{
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #4DB8EF;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    width: 182px;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+}
+
+.Initialbtn2{
+    color: #4DB8EF;
+    background-color:white;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #4DB8EF;
+    font-size: 15px;
+    padding: 7px;
+    width: 185px;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+}
+
+.poli1{
+    color: #4DB8EF;
+    background-color: white;
+    border: 2px solid #4DB8EF;
+    text-align: center;
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 15px;
+    width: 182px;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+}
+
+.poli2{
+    color: white;
+    background-color: #4DB8EF;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    border-color: #4DB8EF;
+    font-size: 15px;
+    padding: 9px;
+    width: 185px;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+}
+
+ .Initialbtn1:hover, .Initialbtn2:hover, .poli1:hover, .poli2:hover{
+    /* font-weight: bolder; */
+    box-shadow: 2px 2px 7px 2px #ddd4d48f;
+  }
+
+  .policy-sub2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  /* -------------------------Responsive----------------------- */
+
+@media screen and (max-width:480px) {
+    .policy-sub1{
+        display: block;
+    }
+
+    .policy-sub2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .policy-img{
+        width: 90vw;
+    }
+
+    .policy-main{
+        padding: 24px 8px;
+    }
+
+    .policy-content{
+        width: 100%;
+        padding: 0px 16px;
+    }
+
+    .intro-p1{
+        font-size: 26px;
+    }
+    .intro-p2{
+        font-size: 26px;
+    }
+    .poliypara{
+        padding-right: 0px;
+    }
+    .poli1{
+        width: 355px;
+    }
+    .poli2 {
+        width: 355px;
+    }
+    .Initialbtn1{
+        width: 355px;
+    }
+    .Initialbtn2{
+        width: 355px;
+    }
+}

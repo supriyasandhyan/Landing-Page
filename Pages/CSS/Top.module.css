@@ -1,0 +1,299 @@
+
+.top{
+  width: 100%;
+  margin-top: 24px;
+  background-image: url(/src/Image/TopBanner.svg);
+  background-blend-mode:darken;
+  background-size:cover;
+  backdrop-filter: blur(50px);
+  background-color: rgba(105, 101, 101, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0 32px 48px;
+}
+
+.top-main{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.top-right {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ptext {
+  display: flex;
+    align-items: start;
+    text-align: end;
+}
+
+.lablediv{
+  padding-top: 32px;
+}
+
+.toplable{
+  color: rgb(255, 255, 255);
+  font-size: 36px ;
+  font-weight: 600;
+}
+.toplable b{
+  font-size: 36px;
+  font-weight: 500;
+  color:#4db8ef ;
+}
+
+.para1 span{
+  color: #4db8ef;
+  animation: blinker 1s linear infinite;
+}
+.talk{
+  background-color: #4DB8EF;
+    padding: 10px 20px 10px 30px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    transition: all .2s;
+    border-top-left-radius: 25px ;
+    border-bottom-left-radius: 25px;
+}
+
+.talk-img{
+  cursor: pointer;
+}
+
+.ptext a{
+  text-decoration: none;
+}
+
+.marquee {
+  height: 20%;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.marquee--inner {
+  width: 263%;
+  position: absolute;
+  padding: 5px;
+  animation: marquee 25s linear infinite;
+  background: rgb(209, 145, 145);
+}
+
+.marquee--inner:hover {
+  animation-play-state: paused;
+}
+
+.marquee--span {
+  border: 2px solid white;
+  float: left;
+  width: 50%;
+  justify-content: space-around;
+  background: rgb(23, 43, 85);
+}
+.marquee--span img{
+ width: 100px;
+  justify-content: space-around;
+}
+
+@keyframes marquee {
+  0% { right: 0; }
+  100% { right: -100%; }
+}
+
+
+.complogo{
+  justify-content: space-around;
+  background: rgb(134, 31, 31);
+}
+
+.top-foot {
+  font-size: 10px;
+  text-align: center;
+}
+.top-foot b{
+  color: #4db8ef;
+}
+.top .top-foot p{
+  text-align: center;
+  font-size: 25px;
+  padding: 50px;
+}
+
+.ptext p:hover{
+ color: rgb(255, 255, 255);
+ font-weight: bolder;
+}
+
+.pic1{
+  height: 100px;
+  width: 188px;
+  padding: 20px;
+}
+.pic2{
+  height: 100px;
+  width: 170px;
+  padding: 4px;
+}
+.pic3{
+  height: 100px;
+  width: 155px;
+  padding-left: 28px;
+}
+.pic4{
+  height: 100px;
+  width: 200px;
+  padding-left: 26px;
+
+}
+.pic5{
+  height: 127px;
+  width: 210px;
+  padding-left: 70px;
+}
+.pic6{
+  height: 100px;
+  width: 240px;
+  padding-left: 85px;
+}
+.pic7{
+  height: 86px;
+  width: 270px;
+  padding-left: 100px;
+}
+.pic8{
+  height: 94px;
+  width: 326px;
+  padding: 8px;
+}
+.pic9{
+  height: 100px;
+  width: 240px;
+  padding: 10px;
+}
+.pic10{
+  height: 94px;
+    width: 205px;
+    padding-left: 30px;
+}
+.pic11{
+  height: 100px;
+  width: 180px;
+  padding: 10px 0px 5px 70px;
+}
+.pic12{
+  height: 100px;
+  width: 190px;
+  padding-left: 40px;
+}
+.pic13{
+  height: 98px;
+  width: 215px;
+  padding-top: 2px;
+  padding-left: 20px;
+}
+.pic14{
+  height: 100px;
+  width: 220px;
+  padding: 5px 40px 5px 40px;
+}
+
+.Seo-Button{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  grid-column: 1 / span 2;
+  /* height: 30%; */
+  padding: 16px 0px;
+}
+
+.seo-btn1{
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #4DB8EF;
+  border: none;
+  padding: 8px 48px;
+}
+
+.seo-btn1:hover{
+  box-shadow: 1px 1px 5px 1px #ddd4d48f;
+}
+
+.seo-btn2{
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  background: transparent;
+  border: 2px solid white;
+  padding: 8px 48px;
+}
+
+.seo-btn2:hover{
+  box-shadow: 1px 1px 5px 1px #ddd4d48f;
+}
+
+
+/* Mobile view */
+@media screen and (max-width:480px) {
+
+  .top{
+    padding: 20px 16px;
+  }
+
+  .talk{
+    visibility: hidden;
+  }
+  .toplable{
+    font-size: 26px;
+    /* margin-left: 45px; */
+  }
+  .toplable b {
+    font-size: 26px;
+  }
+  .top-main{
+    grid-template-columns: 1fr;
+  }
+  .ptext{
+    display: none;
+  }
+  .Seo-Button{
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .seo-btn1{
+    width: 355px;
+  }
+  .seo-btn2{
+    width: 355px;
+  }
+  
+  .lablediv{
+    padding-top: 16px;
+  }
+
+  /* .slider {
+    margin: 48px 16px;
+  } */
+
+}
+
+/* Destop and more */
+@media screen and (min-width:1200px) {
+  
+  .talk{
+    font-size: 20px;
+  } 
+    
+  .top-main{
+    padding: 0px 0px 0 48px;
+  }
+}

@@ -1,0 +1,257 @@
+.power-parent{
+  padding-top: 20px ;
+  padding-left: 48px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d7ebf6;
+  padding-right: 50px;
+}
+
+.power-subchild-1{
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+}
+.power-intro{
+  line-height: 20px;
+}
+.power-intro p{
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.power-button{
+  padding-top: 40px;
+}
+.power-button button{
+  padding: 10px;
+    width: 170px;
+    color: white;
+    background-color: #4DB8EF;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+}
+.power-button button:hover{
+  box-shadow: 4px 2px 4px 2px #8080808f;
+  /* transition: 0.5s; */
+}
+.power-subchild-2{
+  display: flex;
+}
+.power-image{
+  width: 350px;
+}
+
+/* -----------------------------------------------Animation-------------------------------------------- */
+
+.homepower:before{
+   	content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.homepower label{
+  position:absolute;
+  /* padding-left: 45px; */
+  font-size: 30px;
+  color: #4DB8EF;
+  font-weight: 500;
+}
+
+.stage{
+	width: auto;
+	margin-top: 15px;
+  font-size: 30px;
+  }
+
+  .hideMe1 {
+    opacity: 1;
+    -webkit-animation: cssAnimation 10s  infinite;
+    animation: cssAnimation 10s  infinite;
+    height: 20px;
+   
+  }
+  .hideMe2 {
+    opacity: 0;
+    -webkit-animation: cssAnimation2 10s  infinite;
+    /* Safari and Chrome */
+    animation: cssAnimation2 10s  infinite;
+    height: 20px;
+    margin-top: -20px;
+  }
+  .hideMe3 {
+    opacity: 0;
+    -webkit-animation: cssAnimation3 10s  infinite;
+    /* Safari and Chrome */
+    animation: cssAnimation3 10s  infinite;
+    height: 20px;
+    margin-top: -20px;
+  }
+  .hideMe4 {
+    opacity: 0;
+    -webkit-animation: cssAnimation4 10s  infinite;
+    /* Safari and Chrome */
+    animation: cssAnimation4 10s  infinite;
+    height: 20px;
+    margin-top: -20px;
+  }
+  .hideMe5 {
+    opacity: 0;
+    -webkit-animation: cssAnimation5 10s  infinite;
+    /* Safari and Chrome */
+    animation: cssAnimation5 10s  infinite;
+    height: 20px;
+    margin-top: -20px;
+  }
+  
+  @keyframes cssAnimation {
+    0%{
+      opacity: 1;
+      visibility:visible;
+    }
+    20% {
+      opacity: 1;
+      visibility:visible;
+    }
+    21%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+  
+  @keyframes cssAnimation2 {
+    20% {
+      opacity: 0;
+      visibility:hidden;
+    }
+    25%{
+      opacity: 1;
+      visibility:visible;
+    }
+    45%{
+      opacity: 1;
+      visibility:visible;
+    }
+    46%{
+      opacity: 0;
+      visibility:hidden;
+    }
+    100%{
+      opacity: 0;
+      visibility:hidden;
+    }
+  }
+  
+  
+  @keyframes cssAnimation3 {
+    45%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    50%{
+      opacity: 1;
+      visibility: visible;
+    }
+    60%{
+      opacity: 1;
+      visibility: visible;
+    }
+    61%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes cssAnimation4 {
+    65%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    67%{
+      opacity: 1;
+      visibility: visible;
+    }
+    80%{
+      opacity: 1;
+      visibility: visible;
+    }
+    81%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes cssAnimation5 {
+    80%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    85%{
+      opacity: 1;
+      visibility: visible;
+    }
+    95%{
+      opacity: 1;
+      visibility: visible;
+    }
+    96%{
+      opacity: 0;
+      visibility: hidden;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+/* ---------------------------------------------------Responsive---------------------------------------- */
+
+@media screen and (max-width:480px) {
+  .power-parent{
+    display: block;
+    padding: 0;
+  }
+
+  .power-subchild-1{
+    display: block;
+    padding: 32px 16px;
+  }
+
+  .power-intro p{
+    padding: 0;
+    font-size: 26px;
+  }
+
+  
+  .homepower label{
+    padding-left: 0px;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .power-button{
+    margin-top: 80px;
+    padding: 0;
+  }
+  .stage{
+    font-size: 26px;
+    }
+}
+
+
+ 

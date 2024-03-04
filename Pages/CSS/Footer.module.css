@@ -1,0 +1,220 @@
+.footer{
+  background-color: #4DB8EF;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  padding: 30px 100px 0px 100px;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: 25px;
+}
+.footer-sub{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.iframe-container{
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.frame-border{
+ width:290px;
+ height:189px;
+ padding-top: 15px;
+ background-color: white;
+}
+.addresscards{
+  display: grid;
+  padding: 5px;
+  width: 70%;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 5px;
+}
+.addresscards1{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.addresscards1-head span{
+  color: white;
+  font-size: 18px;
+}
+.addresscard2{
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+  
+.cont-p{
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  padding-top: 20px;
+}
+  
+.rowrow{
+  /* background-color: #4DB8EF; */
+}
+.lgview1{
+    font-size:30px;
+    color: black;
+    font-weight: 500;
+    /* text-align: start; */
+}
+  
+.lgview2{
+  font-size: 28px;
+  font-weight: 500;
+  color: #4DB8EF;
+}
+
+  
+.lgview3{
+    font-size: 15px;
+    color: black;
+    text-align: start;
+    font-weight: lighter;
+    width: 60%;
+}
+
+  .righttcontainerr {
+    width: 100%;
+    padding: 20px;
+    background-color: #dfeff7;
+    justify-content: center;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+
+  .inputsfrm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px;
+  }
+
+  .foot-input{
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+  }
+  .foot-textarea{
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+  }
+  .frmsubbtn{
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color:#4DB8EF;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 5px 1px #8080808f;
+
+  }
+  .frmsubbtn:hover{
+    box-shadow: 2px 2px 7px 2px #8080808f;
+  }
+
+  .chotapara{
+    display: flex;
+  }
+  
+  .parent-footer{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#4DB8EF; */
+  }
+  .icon-fld{
+    margin-left: 5px;
+    margin-top: -20px;
+  }
+
+  .paratxt1{
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+  }
+
+  .paratxt1 p {
+    background: linear-gradient(90deg, #4DB8EF, #dae7ee, #4DB8EF);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 2s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  .fcbk:hover{
+    height: 22px;
+  }
+  .inst:hover{
+    height: 22px;
+  }
+  .twtr:hover{
+    height: 22px;
+  }
+  .lnkd:hover{
+    height: 22px;
+  }
+
+  .error{
+    color: red;
+    display: list-item;
+    font-size: 13px;
+    margin-left: -208px;
+    list-style-type: none;
+  }
+  .err{
+    color: red;
+    font-size: 12px;
+    margin-left: -30px;
+  }
+
+  @media screen and (max-width:480px) {
+
+  .righttcontainerr {
+      width: 95%;
+      margin: 0px 10px; 
+  }
+  .footer-sub{
+    display: block;
+  }
+  .footer{
+    padding: 0px;
+  }
+  .left{
+    padding: 20px;
+  }
+  .foot-input{
+    width: 100%;
+  }
+  .foot-textarea{
+    width: 100%;
+  }
+  .frmsubbtn {
+    width: 100%;
+  }
+  .lgview2{
+    font-size: 25px;
+  }
+  .lgview1{
+    font-size: 26px;
+  }
+  .addresscard2{
+    font-size: 15px;
+  }
+}
